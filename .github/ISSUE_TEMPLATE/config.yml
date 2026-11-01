@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 官网与安装指南
+    url: https://pigeon-dev.a1137583371.workers.dev/start
+    about: 查看安装方式和当前支持范围
