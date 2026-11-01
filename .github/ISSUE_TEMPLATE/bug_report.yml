@@ -1,0 +1,27 @@
+name: 问题反馈
+description: 反馈鸽子设备连接、登录和安装问题（不要包含密钥）
+title: "[Bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "这是公开 Issue。请勿填写 Token、私钥、绑定码、个人数据或未经脱敏的日志。"
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options: [Windows, Linux, ChatGPT, Cloudflare 官网, 其他]
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: 问题描述
+      description: 描述操作过程和实际/预期结果。避免使用真实账号标识和设备 ID。
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤（可选）
+      description: 只提供脱敏、可公开的步骤。
